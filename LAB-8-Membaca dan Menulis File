@@ -1,0 +1,65 @@
+# 71200595 Gerry Sunjay Junjung 
+# File .txt sebagai berikut: 
+# Matematika ML201 2018 Rp.68.000
+# Fisika F320 2015 Rp.74.000
+# Kimia K342 2010 Rp.120.000
+# Biologi B843 2020 Rp.60.000
+handle = open('C:\\Kuliah\\PrAlPro8\\buku.txt','r')
+baris =  (handle.readlines())
+A = "Matematika"
+B = "Fisika"
+C = "Kimia"
+D = "Biologi"
+for i in range (100):
+    cari = str(input("Judul Buku Yang Ingin Dicari : "))
+    if cari == A:
+        print ("Buku ditemukan")
+        perbaris = (baris[0])
+        perkata = (perbaris.split())
+        judul = (perkata[0])
+        kode = (perkata[1])
+        tahun = (perkata[2])
+        harga = (perkata[3])
+        print ('Judul Buku     : ',judul)
+        print ('Kode Buku      : ',kode)
+        print ('Tahun Rilis    : ',tahun)
+        print ('Harga          : ',harga)
+    elif cari == B:
+        print ("Buku ditemukan")
+        perbaris = (baris[1])
+        perkata = (perbaris.split())
+        judul = (perkata[0])
+        kode = (perkata[1])
+        tahun = (perkata[2])
+        harga = (perkata[3])
+        print ('Judul Buku     : ',judul)
+        print ('Kode Buku      : ',kode)
+        print ('Tahun Rilis    : ',tahun)
+        print ('Harga          : ',harga)
+    elif cari == C:
+        print ("Buku ditemukan")
+        perbaris = (baris[2])
+        perkata = (perbaris.split())
+        judul = (perkata[0])
+        kode = (perkata[1])
+        tahun = (perkata[2])
+        harga = (perkata[3])
+        print ('Judul Buku     : ',judul)
+        print ('Kode Buku      : ',kode)
+        print ('Tahun Rilis    : ',tahun)
+        print ('Harga          : ',harga)
+    elif cari == D:
+        print ("Buku ditemukan")
+        perbaris = (baris[3])
+        perkata = (perbaris.split())
+        judul = (perkata[0])
+        kode = (perkata[1])
+        tahun = (perkata[2])
+        harga = (perkata[3])
+        print ('Judul Buku     : ',judul)
+        print ('Kode Buku      : ',kode)
+        print ('Tahun Rilis    : ',tahun)
+        print ('Harga          : ',harga)
+    else:
+        print ('Barang tidak ditemukan silahkan cari lagi')
+handle.close()
